@@ -1,0 +1,53 @@
+.contacts{
+  display: flex;
+  margin-bottom: 23px;
+}
+
+.contacts__image{
+  height: 34px;
+  width: 28px;
+  margin: 0 8px;
+}
+
+
+
+.contacts-adress .contacts:nth-of-type(1){
+  .contacts__image{
+    background: url('../image/icons_new/home.svg')0 0 no-repeat;
+  }
+}
+
+.contacts-phone .contacts:nth-of-type(1){
+  .contacts__image{
+    background: url('../image/icons_new/phone.svg')0 0 no-repeat;
+  }
+}
+
+.contacts-mail .contacts  .contacts__image{
+  background: url('../image/icons_new/mail.svg')0 0 no-repeat;
+  background-size: contain;
+}
+
+.contacts__social{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contacts__description {
+  flex-grow: 1;
+}
+
+.contacts__description p{
+  color:rgb(226,236,246);
+  font-size: 20px;
+  font-family: $roboto;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.contacts-phone .contacts:nth-of-type(2){
+  margin-bottom: 0;
+}
+.social-network--bottom{
+    margin-left: 37px;
+}

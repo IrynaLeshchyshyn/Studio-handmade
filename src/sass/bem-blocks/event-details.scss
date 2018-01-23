@@ -1,0 +1,204 @@
+.event-details{
+  height: 27px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-grow: 1;
+
+  &--product{
+    height: 30px;
+  }
+
+  &--nearest{
+    flex-grow: 1;
+    height: 41px;
+    padding-left: 4%;
+    padding-right: 2%;
+    padding: 0;
+    justify-content: space-around;
+    padding-left: 2%;
+    padding-right: 3.5%;
+
+    @media only screen and (min-width:768px) and (max-width:1140px){
+      justify-content: flex-start;
+      padding-left: 2%;
+      padding-right: 3.5%;
+    }
+
+    @media only screen and (min-width:320px) and (max-width:768px){
+      flex-basis: auto;
+      justify-content: center;
+      padding-left: 2%;
+      padding-right: 2%;
+    }
+      &:nth-of-type(1){
+        border-right: 1px solid  $linesSpindle;
+
+        @media only screen and (min-width:320px) and (max-width:768px){
+          border-right: 1px solid  transparent;
+        }
+      }
+      &:nth-of-type(2){
+        border-right: 1px solid  $linesSpindle;
+
+        @media only screen and (min-width:320px) and (max-width:768px){
+          border-right: 1px solid  transparent;
+        }
+      }
+  }
+  &--race{
+    height: 44px;
+    padding-left: 10px;
+    border-top: 1px solid  $linesSpindle;
+    border-bottom: 1px solid  $linesSpindle;
+  }
+
+  &__icon{
+    background: url('../image/icons/treasure-map-mini.svg') 0 0 no-repeat;
+    width: 15px;
+    height: 15px;
+
+    &--nearest{
+      width: 21px;
+      height: 21px;
+
+      @media only screen and (min-width:768px) and (max-width:1140px){
+        width: 21px;
+        height: 21px;
+      }
+      @media only screen and (min-width:320px) and (max-width:768px){
+        width: 21px;
+        height: 21px;
+      }
+    }
+
+    &--race{
+      width: 30px;
+      height: 30px;
+      fill:$aquamarine;
+      min-width: 30px;
+      width: 24px;
+      height: 29px;
+    }
+  }
+
+  &__data{
+    border-right: none;
+    font-size: 14px;
+    font-family: $fira;
+    font-weight: 300;
+    color:rgb(35,23,22);
+    padding-right: 8px;
+    padding-left: 5px;
+    padding-left: 4%;
+    padding: 0;
+
+    &--product{
+      font-size: 18px;
+    }
+
+    &--nearest{
+      font-size: 18px;
+      padding-right: 29px;
+      padding-right: 24px;
+      padding: 0;
+      white-space: nowrap;
+
+      @media only screen and (min-width:768px) and (max-width:1140px){
+        padding: 0;
+        padding-left: 4%;
+      }
+
+      @media only screen and (min-width:320px) and (max-width:768px){
+        flex-direction: column;
+        padding: 0 2%;
+      }
+    }
+
+    &--race{
+      border-right: none;
+      font-size: 18px;
+    }
+
+    &--blog{
+      font-size: 18px;
+      color:#010101;
+
+      @media only screen and (min-width:768px) and (max-width:1140px){
+        padding-left: 5%;
+      }
+
+      @media only screen and (min-width:320px) and (max-width:768px){
+        padding-left: 5%;
+      }
+    }
+  }
+
+  &__code{
+    font-size: 18px;
+    font-family: $fira;
+    font-weight: 500;
+    color: #7c4f3a;
+  }
+}
+
+.nearest-traveling .event-details--nearest:nth-of-type(1){
+  .event-details__icon--nearest{
+    background: url("../image/icons_new/calendar.svg") 0 0 no-repeat;
+    background-size: cover;
+    }
+}
+.nearest-traveling .event-details--nearest:nth-of-type(2){
+  .event-details__icon--nearest{
+    background: url('../image/icons_new/time.svg')0 0 no-repeat;
+  }
+}
+
+
+.nearest-traveling .event-details--nearest:nth-of-type(3){
+  .event-details__icon--nearest{
+    background: url('../image/icons_new/money.svg')0 0 no-repeat;
+  }
+}
+.race-cont .event-details--race:nth-of-type(1){
+  .event-details__icon--race{
+    background: url("../image/icons_new/calendar.svg") 0 0 no-repeat;
+    background-size: cover;
+  }
+}
+.race-cont .event-details--race:nth-of-type(2){
+  .event-details__icon--race{
+    background: url('../image/icons_new/nyt.svg')0 0 no-repeat;
+    background-size: cover;
+    display: none;
+  }
+}
+
+.box {
+  height: 4.5em;
+  overflow: hidden;
+}
+
+
+.box--responsive {
+  width: 100%;
+}
+
+.ellip {
+  display: block;
+  height: 100%;
+}
+
+.ellip-line {
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+.ellip,
+.ellip-line {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+}

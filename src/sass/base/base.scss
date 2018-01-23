@@ -1,0 +1,42 @@
+*{
+	padding:0;
+	margin:0;
+	margin-top:0;
+	margin-bottom:0;
+}
+
+body{
+
+}
+
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p{
+    margin:0 0 0 0;
+}
+
+a:hover,
+a:focus,
+a:visited,
+a:link {
+	text-decoration:none;
+}
+button:focus,
+button:active,
+button:hover{
+	outline:0;
+	//border:none;
+}
+
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+    outline: none;
+}

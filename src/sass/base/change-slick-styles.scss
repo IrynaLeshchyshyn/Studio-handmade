@@ -1,0 +1,154 @@
+//common for all slick-sliders
+.slick-initialized .slick-slide {
+  outline: none;
+}
+.race-bkg .slick-prev,
+.race-bkg .slick-next{
+  display: none !important;
+}
+.race-bkg .slick-dots li button{
+  background: #231716;
+  border-radius: 40px;
+}
+
+//shop-carousel
+.responsive .slick-prev,
+.responsive .slick-next{
+  display: none !important;
+}
+
+//photo-carousel
+.photo-gallery-carousel .slick-prev,
+.photo-gallery-carousel .slick-next{
+  display: none !important;
+}
+
+.photo-gallery-carousel .slick-dots li button{
+  background: white;
+  border:2px solid #5a9fb5;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+
+
+.photo-gallery-carousel .slick-dots li button:hover{
+  background: #5a9fb5;
+}
+
+.photo-gallery-carousel .slick-dots li button:before{
+  display: none;
+}
+
+//testimonial
+.testimonial-cont .slick-prev {
+  position: absolute;
+  display: block;
+  height: 40px;
+  width: 40px;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  background: rgba(179,215,250,0.8);
+  color: transparent;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  padding: 0;
+  border: none;
+  outline: none;
+  z-index: 1;
+
+  @media only screen and (min-width:768px) and (max-width:1140px){
+    height: 30px;
+    width: 30px;
+  }
+
+  @media only screen and (min-width:320px) and (max-width:768px){
+    height: 30px;
+    width: 30px;
+  }
+}
+
+.testimonial-cont .slick-next {
+  position: absolute;
+  display: block;
+  height: 40px;
+  width: 40px;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  background: rgba(179,215,250,0.8);
+  color: transparent;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  padding: 0;
+  border: none;
+  outline: none;
+  z-index: 1;
+
+  @media only screen and (min-width:768px) and (max-width:1140px){
+    height: 30px;
+    width: 30px;
+  }
+
+  @media only screen and (min-width:320px) and (max-width:768px){
+    height: 30px;
+    width: 30px;
+  }
+}
+.testimonial-cont .slick-prev {
+  left: 0;
+  top:50%;
+
+  @media only screen and (min-width:320px) and (max-width:460px){
+    top: -24px;
+    left:40%;
+    margin-left: -15px;
+  }
+}
+
+.testimonial-cont .slick-next {
+  top:50%;
+  right: 0;
+
+  @media only screen and (min-width:320px) and (max-width:460px){
+    top: -24px;
+    right:40%;
+    margin-right: -15px;
+  }
+}
+
+
+.testimonial-cont .slick-next {
+    &:before {
+      content: '';
+      background: url('../image/icons/arrow.svg') no-repeat;
+      top: 50%;
+      left: 50%;
+      margin-left: -8px;
+      margin-top: -12px;
+      position: absolute;
+      width: 16px;
+      height: 25px;
+      background-size: cover;
+    }
+  }
+  .testimonial-cont .slick-prev {
+      &:before {
+        transform: rotate(180deg);
+        content: '';
+        background: url('../image/icons/arrow.svg') no-repeat;
+        top: 50%;
+        left: 50%;
+        margin-left: -8px;
+        margin-top: -12px;
+        position: absolute;
+        width: 16px;
+        height: 25px;
+        background-size: cover;
+      }
+  }

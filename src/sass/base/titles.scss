@@ -1,0 +1,139 @@
+.top-video-bkg h1{
+  font-family: $roboto;
+  color:rgb(35,23,22);
+  text-align: center;
+  font-weight: 500;
+  font-size: 50px;
+  margin-top: 80px;
+  margin-bottom: 82px;
+  line-height: 61px;
+
+  @media only screen and (min-width:768px) and (max-width:1140px){
+    margin-top: 24.6%;
+    margin-bottom: 12%;
+  }
+
+  @media only screen and (min-width:320px) and (max-width:768px){
+    margin-top: 0;
+    margin-bottom: 11%;
+  }
+}
+
+@mixin main-text{
+  font-family: $roboto;
+  font-weight: 500;
+  color:rgb(35,23,22);
+}
+
+.photo-gallery-bkg h2,
+.race-bkg h2,
+.shop-bkg h2,
+.testimonial-bkg h2,
+.blog h2,
+.nearest-traveling h2,
+.select-region h2,
+.about-scholl-bkg h2{
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  position: relative;
+  font-size: 40px;
+  margin: 0 auto;
+  overflow: hidden;
+  @include main-text;
+
+  @media only screen and (min-width:768px) and (max-width:1140px){
+    font-size: 40px;
+  }
+
+  @media only screen and (min-width:320px) and (max-width:768px){
+    font-size: 24px;
+  }
+}
+
+.photo-gallery-bkg h2:before,
+.race-bkg h2:before,
+.shop-bkg h2:before,
+.testimonial-bkg h2:before,
+.blog h2:before,
+.about-scholl-bkg h2:before,
+.nearest-traveling h2:before,
+.select-region h2:before{
+  background: $linesSpindle;
+  width: 100%;
+  height: 2px;
+  background: rgb(226,236,246);
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  border: solid white;
+  border-width: 0 13px 0 1px;
+  margin-left: -100%;
+}
+
+.photo-gallery-bkg h2:after,
+.race-bkg h2:after,
+.shop-bkg h2:after,
+.testimonial-bkg h2:after,
+.blog h2:after,
+.about-scholl-bkg h2:after,
+.nearest-traveling h2:after,
+.select-region h2:after{
+  background: $linesSpindle;
+  width: 100%;
+  height: 2px;
+  background: rgb(226,236,246);
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  border: solid white;
+  border-width: 0 13px 0 1px;
+  margin-right: -100%;
+}
+
+.level h3{
+  font-family: $roboto;
+  font-weight: 500;
+  font-size: 30px;
+  color:rgb(35,23,22);
+  text-align: center;
+  margin: auto;
+  margin: 0;
+
+  @media only screen and (min-width:768px) and (max-width:1140px){
+    font-size: 30px;
+  }
+
+  @media only screen and (min-width:320px) and (max-width:768px){
+    font-size: 20px;
+  }
+}
+
+.about-scholl-cont h4{
+  font-family: $fira;
+  font-weight: 300;
+  font-size: 16px;
+  color:black;
+  text-align: center;
+  max-width: 932px;
+  display: block;
+  margin: auto;
+  line-height: 26px;
+}
+.race{
+  h3{
+    @include main-text;
+    font-size: 30px;
+    min-height: 100px;
+    min-height: 93px;
+    text-align: center;
+  }
+}
+
+.race--low{
+  h3{
+    text-transform: lowercase;
+  }
+}
